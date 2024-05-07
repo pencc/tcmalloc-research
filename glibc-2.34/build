@@ -1,0 +1,5 @@
+#!/bin/bash
+
+../configure --prefix=/usr --enable-debug
+make CFLAGS="-g -Og -Wno-error=maybe-uninitialized" -j2
+
